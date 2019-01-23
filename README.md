@@ -4,7 +4,7 @@ This repository trains and attacks (using C&W L2 attack[1]) a sample model on MN
 
 ## Prerequisites
 
-Following are the libraries that need to be installed before you use the toolbox:
+Following are the libraries that need to be installed before running the code:
 
 ```
 numpy
