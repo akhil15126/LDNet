@@ -1,6 +1,6 @@
 # LDNet
 
-This repository trains and attacks (using C&W L2 attack) a sample model on MNIST dataset with and without the proposed defense layer. 
+This repository trains and attacks (using C&W L2 attack[1]) a sample model on MNIST[2] dataset with and without the proposed defense layer. 
 
 ## Prerequisites
 
@@ -30,3 +30,12 @@ Running code with LDNet
 ```
 python main.py --ldnet
 ```
+
+## References
+
+[1] Carlini, N. and Wagner, D. Towards evaluating the robustness of neural networks. In IEEE Symposium on Security
+and Privacy, pp. 39–57, 2017b.
+
+[2] http://yann.lecun.com/exdb/mnist/
+
+
