@@ -28,7 +28,7 @@ python main.py
 Running code with DndNet
 
 ```
-python main.py --ldnet
+python main.py --dndnet
 ```
 
 ## References
