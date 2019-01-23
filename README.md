@@ -1,4 +1,4 @@
-# DNDNet
+# DndNet
 
 This repository trains and attacks (using C&W L2 attack[1]) a sample model on MNIST[2] dataset with and without the proposed defense layer. 
 
@@ -19,13 +19,13 @@ Repositiory Link : https://github.com/carlini/nn_robust_attacks
 
 ## Usage
 
-Running code without DNDNet
+Running code without DndNet
 
 ```
 python main.py 
 ```
 
-Running code with DNDNet
+Running code with DndNet
 
 ```
 python main.py --ldnet
