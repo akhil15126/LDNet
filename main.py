@@ -7,7 +7,7 @@ from model import Model
 import argparse
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument("-ldn", "--ldnet", action='store_true', help="Use Defense Layer")
+parser.add_argument("-dnd", "--dndnet", action='store_true', help="Use Defense Layer")
 parser.add_argument("-e","--epochs", type=int, default=1, help="Number of epochs")
 args = parser.parse_args()
 
@@ -24,7 +24,7 @@ with tf.Session() as sess:
 	X_train=X_train/255.0
 	X_test=X_test/255.0
 
-	model=Model(ldnet=args.ldnet)
+	model=Model(dndnet=args.dndnet)
 
 	model.train(X_train,Y_train,epochs=args.epochs)
 

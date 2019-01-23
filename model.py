@@ -1,10 +1,10 @@
 import tensorflow as tf
 import keras
-from LDNet import DefenseLayer
+from DndNet import DefenseLayer
 
 
 class Model:
-	def __init__(self,ldnet=False,height=28,width=28,channels=1,classes=10):
+	def __init__(self,dndnet=False,height=28,width=28,channels=1,classes=10):
 		self.height=height
 		self.width=width
 		self.channels=channels
@@ -12,7 +12,7 @@ class Model:
 		self.num_labels=classes
 		self.num_channels=channels
 		x=keras.layers.Input(shape=(self.height,self.width,self.channels))
-		if(ldnet):
+		if(dndnet):
 			temp=DefenseLayer()(x)
 			newx=keras.layers.Add()([x,temp])
 			c1=keras.layers.Conv2D(filters=32,kernel_size=5,activation='relu')(newx)
