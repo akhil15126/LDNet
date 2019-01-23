@@ -1,5 +1,7 @@
 # LDNet
 
+This repository trains and attacks (using C&W L2 attack) a sample model on MNIST dataset with and without the proposed defense layer. 
+
 ## Prerequisites
 
 Following are the libraries that need to be installed before you use the toolbox:
